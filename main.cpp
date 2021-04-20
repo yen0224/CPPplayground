@@ -13,7 +13,7 @@ int main() {
     cout<<"---------------------------------"<<endl;
     do {
         pre_guessVal=guessVal;
-        cout<<setw(10)<<iter_count<<setw(10)<<guessVal<<endl;
+        cout<<setw(10)<<left<<iter_count<<setw(10)<<right<<setprecision(6)<<fixed<<guessVal<<endl;
         guessVal=(toFind/pre_guessVal+pre_guessVal)/2;
         iter_count++;
     }while(pre_guessVal-guessVal>0.00001);
